@@ -37,21 +37,91 @@ module user/page
     label("Is Manager"){output(u.isManager)}
   }
   
+  template editAdminStatus(u:User){
+    action save(){
+      u.save();
+      message("user info updated");
+      return user(u);
+    }
+    form{
+      formgroup("Edit Admin Status"){
+        label("Is Manager"){input(u.isManager)}
+        break
+        action("save",save())
+      }
+    }
+  }
+
+  template editUserPassword(u:User){
+    "TODO: change pw"
+    action changePassword(){
+      var pass : String := u.password.toString();
+      u.password := u.password.digest();
+      u.save();
+      email(emailNewPassword(u,pass));
+      message("password changed");
+      return user(u);
+    }
+    }
+    form{
+      formgroup("Change Password"){
+        label("Password"){input(u.password)}
+        label("Repeat Password"){input(temp){ validate(u.password == temp, "Password does not match") } }
+        break
+        action("change",changePassword())
+      }
+    }
+  }
+
   page editUser(u:User){
     main()
     define localBody(){
       standardLayout{
         editUserDetails(u)
+        editUserPassword(u)
+        editAdminStatus(u)
       }
     }
   }
   
   page createUser(){
     main()
-    "TODO:creat user"
+    define localBody(){
+      var u := User{}  //TODO vars cannot be in enclosing def, fix
+      var temp : Secret := ""
+      action save(){
+        u.password := u.password.digest();
+        u.save();
+
+        //message("user info updated");
+        return user(u);
+      }
+      standardLayout{
+        form{
+          formgroup("Create User"){
+            label("Name"){input(u.username)}
+            label("Email"){input(u.email)}
+            label("Password"){input(u.password)}
+            label("Repeat Password"){input(temp){ validate(u.password == temp, "Password does not match") } }
+            break
+            action("save",save())
+          }
+        }
+      }
+    }
   }
   
   page listUsers(){
     main()
-    "TODO:list users"
+    define localBody(){
+      standardLayout{
+        group("Users"){
+          table{
+            for(u:User order by u.username){
+              output(u)
+            }
+          }
+        }
+      }
+    }
   }

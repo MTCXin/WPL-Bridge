@@ -6,7 +6,6 @@ imports user/main
 
 imports login
 imports ac
-// imports global-set
 page home(){
   init{
     return root();
