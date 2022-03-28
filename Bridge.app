@@ -3,6 +3,8 @@ application Bridge
 //token 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
 imports template/main
 imports user/main
+imports news/main
+imports boards/main
 
 imports login
 imports ac
@@ -16,7 +18,8 @@ page home(){
 page root {
   main()  //TODO
   template localBody(){
-    "To do show news"//showNews() //TODO
+    "To do complete news"//showNews() //TODO
+    showNews()
   }
   template sidebarPlaceholder(){
     sidebar{

@@ -54,14 +54,14 @@ module user/page
 
   template editUserPassword(u:User){
     "TODO: change pw"
+    var temp : Secret := ""
     action changePassword(){
-      var pass : String := u.password.toString();
+      // var pass : String := u.password.toString();
       u.password := u.password.digest();
       u.save();
-      email(emailNewPassword(u,pass));
       message("password changed");
       return user(u);
-    }
+    
     }
     form{
       formgroup("Change Password"){
