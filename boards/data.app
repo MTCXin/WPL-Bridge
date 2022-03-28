@@ -1,7 +1,9 @@
 module boards/data
 
 entity Boards{
-  description :: WikiText
+  content :: WikiText (searchable)
   time :: DateTime
-  // TODO: more attribute
+  title :: String (name, searchable)
+  creator -> User
+  player :: {User}
 }

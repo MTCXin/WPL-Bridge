@@ -7,6 +7,7 @@ module user/page
         formgroup("User"){
           label("Name"){output(u.username)}
           label("E-mail"){output(u.email)}
+          label("Convention System"){output(u.convention)}
           showAdminStatus(u)
         }
         break
@@ -25,6 +26,7 @@ module user/page
       form{
         formgroup("Edit User"){
           label("Name"){input(u.username)}
+          label("E-mail"){input(u.email)}
           label("Convention System"){input(u.convention)}
           break
           action("save",save())
