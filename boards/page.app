@@ -48,20 +48,25 @@ template output(n: Boards){
     navigate(editBoards(n)){"editBoards"}
   }
 
-  if(loggedIn()){ //TODO: check if user have register this board
+  if(loggedIn()){
     break
     for(user: User in select u from n.player){
       <div class="news-post"> 
       output(n)
       </div>
     action join{
-      
+      n.player.add(securityContext.principal)
     }
     action quit{
-      
+      n.player.remove(securityContext.principal)
+    }
+    if(securityContext.principal in n.player){
+      submit quit {"quit"}
+    }
+    if(~(securityContext.principal in n.player)){
+      submit join {"join"}
     }
     
-    submit join {"TODO:join/quit"}
   }
 
 
@@ -84,7 +89,7 @@ page createBoards(){
         label("Time"){input(n.time)}
       }
     submit save { "save" }
-    navigate home { "cancel" } //TODO
+    navigate home { "cancel" } 
     }
   }
 }
@@ -104,7 +109,7 @@ page editBoards(n: Boards){
         label("Creator"){input(n.creator)}
         label("Time"){input(n.time)}
       }
-      submit save { "save" } //TODO
+      submit save { "save" } 
       navigate home { "cancel" }
     }
   }

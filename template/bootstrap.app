@@ -42,6 +42,7 @@ template navbarheader(){
 }
 
 template navbarsearch(){"TODO:navbarsearch"}
+
 override template container(){
   <div class="container" all attributes> elements </div>
 }
@@ -56,8 +57,9 @@ template navbarleft(){
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">"Admin"<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li>navigate(createBoard()){"Add Page"}</li>  //TODO
-          <li>navigate(listPages()){"List Pages"}</li>
+          <li>navigate(createBoard()){"Create Board"}</li> //TODO
+          navbarsep
+          <li>navigate(listMembers()){"Member List"}</li>
           navbarsep
           <li>navigate(user(securityContext.principal)){"Your Account"}</li>
           if(loggedIn() && securityContext.principal.isManager){
@@ -67,11 +69,6 @@ template navbarleft(){
             }
             <li>navigate(listUsers()){"List Users"}</li>
             navbarsep
-            <li>navigate(createNews()){"Add News"}</li>
-            navbarsep
-            <li>navigate(editMenu()){"Edit Menu"}</li>
-            navbarsep
-            <li>navigate(manage()){"Cleaning"}</li>
           }
         </ul>
       </li>
