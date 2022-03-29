@@ -5,5 +5,5 @@ entity Boards{
   time :: DateTime
   title :: String (name, searchable)
   creator -> User
-  player :: {User}
+  player : {User}
 }

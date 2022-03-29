@@ -3,7 +3,7 @@ application Bridge
 //token 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
 imports template/main
 imports user/main
-imports news/main
+imports boards/main
 imports boards/main
 
 imports login
@@ -39,3 +39,5 @@ template formgroup(s:String){
 
 access control rules
   rule page root(){ true }
+  
+  

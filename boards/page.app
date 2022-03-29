@@ -83,8 +83,8 @@ page createBoards(){
         label("Creator"){input(n.creator)}
         label("Time"){input(n.time)}
       }
-      submit save { "save" }
-      navigate home { "cancel" }
+    submit save { "save" }
+    navigate home { "cancel" } //TODO
     }
   }
 }
@@ -104,7 +104,7 @@ page editBoards(n: Boards){
         label("Creator"){input(n.creator)}
         label("Time"){input(n.time)}
       }
-      submit save { "save" }
+      submit save { "save" } //TODO
       navigate home { "cancel" }
     }
   }
@@ -115,11 +115,13 @@ page deleteBoards(n: Boards){
   define localBody(){
     output(n)
     break
-    "This board game will be deleted "
+    
+    "This board game will be deleted"
+    
     form{
       submit delete { "confirm" }
     }
-    navigate home { "cancel" }
+    navigate home{ "cancel" }
     action delete(){
       n.delete();
       return home();

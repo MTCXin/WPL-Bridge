@@ -7,6 +7,6 @@ module user/data
 	  password :: Secret (validate(password.length() >=8,"Password needs to be at least 8 chars!"))
 	  convention :: WikiText
 	  isManager :: Bool
-	  boards :: {Boards} (inverse=player)
+	  boards : {Boards} (inverse=player)
   }
   
