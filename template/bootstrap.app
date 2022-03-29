@@ -57,18 +57,18 @@ template navbarleft(){
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">"Admin"<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li>navigate(createBoard()){"Create Board"}</li> //TODO
-          navbarsep
-          <li>navigate(listMembers()){"Member List"}</li>
-          navbarsep
+          <li>navigate(createBoards()){"Create Board"}</li> 
+          // navbarsep
+          <li>navigate(listUsers()){"Member List"}</li> //TODO:list member
+          // navbarsep 
           <li>navigate(user(securityContext.principal)){"Your Account"}</li>
-          if(loggedIn() && securityContext.principal.isManager){
-            navbarsep
-            if(allowCreateUser()){
-              <li>navigate(createUser()){"Add User"}</li>
-            }
+          if(securityContext.principal.isManager){
+            // navbarsep
+            
+            <li>navigate(createUser()){"Add User"}</li>
+            // navbarsep
             <li>navigate(listUsers()){"List Users"}</li>
-            navbarsep
+            // navbarsep
           }
         </ul>
       </li>

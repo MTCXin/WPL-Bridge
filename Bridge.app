@@ -4,10 +4,10 @@ application Bridge
 imports template/main
 imports user/main
 imports boards/main
-imports boards/main
 
 imports login
 imports ac
+
 page home(){
   init{
     return root();

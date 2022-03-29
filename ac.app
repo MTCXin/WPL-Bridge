@@ -3,7 +3,7 @@ module ac
 define override page accessDenied(){
   main()
   define localBody(){
-    header{"Can't Access"}
+    header{"You don't have access permission"}
     navigate(home()){"return to homepage"}
   }
 }

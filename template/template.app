@@ -29,6 +29,9 @@ template sidebar(){
     elements
   </div>
 }
+template navbarsep(){
+  "TODO:navbarsep"
+}
 template sidebarPlaceholder(){
   
 }

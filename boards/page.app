@@ -1,17 +1,8 @@
 module boards/page
 
-page creatBoards{
-  main()
-  "TODO creat board"
-}
-
-page joinBoards{
-  main()
-  "TODO join a board"
-}
-
 
 template showBoards(){
+  
   container{
     gridrow{
       gridcolmiddle{
@@ -35,6 +26,12 @@ template showBoards(){
 }
 
 template output(n: Boards){
+  action join(){
+      n.player.add(securityContext.principal);
+    }
+    action quit(){
+      n.player.remove(securityContext.principal);
+    }
   <h2 class="news-post-title">output(n.title)</h2>
   <p class="news-post">
     output(n.time.format("d MMM yyyy HH:mm"))
@@ -43,29 +40,27 @@ template output(n: Boards){
     output(n.content)
   </p>
 
-   if(isManager()){
+  if(loggedIn() && securityContext.principal.isManager){
 
     navigate(editBoards(n)){"editBoards"}
   }
 
   if(loggedIn()){
     break
-    for(user: User in select u from n.player){
-      <div class="news-post"> 
-      output(n)
-      </div>
-    action join{
-      n.player.add(securityContext.principal)
-    }
-    action quit{
-      n.player.remove(securityContext.principal)
-    }
+    
+    // for(user: User in select u from n.player){
+    //   <div class="news-post"> 
+    //   output(u)
+    //   </div>
+    //   }  TODO show members participating
+    
     if(securityContext.principal in n.player){
-      submit quit {"quit"}
+      submit quit() {"quit"}
     }
-    if(~(securityContext.principal in n.player)){
-      submit join {"join"}
+    if(!(securityContext.principal in n.player)){
+      submit join() {"join"}
     }
+    
     
   }
 
@@ -75,7 +70,7 @@ template output(n: Boards){
 page createBoards(){
   main()
   define localBody(){
-    var n := News{creator := securityContext.principal time:=now()}
+    var n := Boards{creator := securityContext.principal time:=now()}
     action save(){
       n.save();
       return home();
@@ -88,8 +83,8 @@ page createBoards(){
         label("Creator"){input(n.creator)}
         label("Time"){input(n.time)}
       }
-    submit save { "save" }
-    navigate home { "cancel" } 
+    submit save() { "save" }
+    navigate home() { "cancel" } 
     }
   }
 }
@@ -109,8 +104,8 @@ page editBoards(n: Boards){
         label("Creator"){input(n.creator)}
         label("Time"){input(n.time)}
       }
-      submit save { "save" } 
-      navigate home { "cancel" }
+      submit save() { "save" } 
+      navigate home() { "cancel" }
     }
   }
 }
@@ -124,9 +119,9 @@ page deleteBoards(n: Boards){
     "This board game will be deleted"
     
     form{
-      submit delete { "confirm" }
+      submit delete() { "confirm" }
     }
-    navigate home{ "cancel" }
+    navigate home(){ "cancel" }
     action delete(){
       n.delete();
       return home();

@@ -10,3 +10,6 @@ rule page editUser(u:User){
 rule page user(u:User){
   loggedIn() || principal == u
 }
+rule page listUsers(){
+  loggedIn()
+}
