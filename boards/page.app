@@ -76,16 +76,23 @@ page createBoards(){
       return home();
     }
     header{"Boards"}
-    form{
-      formgroup("Create a new Board")[labelWidth := "75"]{
-        label("Title"){input(n.title)}
-        label("Description"){input(n.content)}
-        label("Creator"){input(n.creator)}
-        label("Time"){input(n.time)}
-      }
-    submit save() { "save" }
-    navigate home() { "cancel" } 
-    }
+    <ul class="list-group list-group-flush">
+	  <li class="list-group-item">
+			  <div class="mb-3">
+			  <label for="exampleFormControlTextarea1" class="form-label">label("Title"){input(n.title)}</label>
+			  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			</div>
+	  </li>
+	  <li class="list-group-item">label("Description"){input(n.content)}</li>
+	  <li class="list-group-item">label("Time"){input(n.time)}</li>
+	  <li class="list-group-item">
+	  <button type="button" class="btn btn-success">submit save() { "save" }</button>
+    <button type="button" class="btn btn-danger">navigate home() { "cancel" } </button>
+	  </li>
+	  </ul>
+           
+    
+    
   }
 }
 

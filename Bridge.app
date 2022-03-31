@@ -16,9 +16,9 @@ page home(){
 }
 
 page root {
+
   main()  //TODO
   template localBody(){
-    "To do complete news"//showNews() //TODO
     showBoards()
   }
   template sidebarPlaceholder(){
