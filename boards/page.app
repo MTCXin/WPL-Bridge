@@ -75,23 +75,63 @@ page createBoards(){
       n.save();
       return home();
     }
+    
     header{"Boards"}
     <ul class="list-group list-group-flush">
+	  
+	  label("Title")[class="form-label"]{input(n.title)[ class="form-control"]}
+	  label("Description")[class="list-group-item"]{input(n.content)[ class="form-control"]}
+	  label("Time")[class="list-group-item"]{input(n.time)[ class="form-control"]}
 	  <li class="list-group-item">
-			  <div class="mb-3">
-			  <label for="exampleFormControlTextarea1" class="form-label">label("Title"){input(n.title)}</label>
-			  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-			</div>
-	  </li>
-	  <li class="list-group-item">label("Description"){input(n.content)}</li>
-	  <li class="list-group-item">label("Time"){input(n.time)}</li>
-	  <li class="list-group-item">
-	  <button type="button" class="btn btn-success">submit save() { "save" }</button>
-    <button type="button" class="btn btn-danger">navigate home() { "cancel" } </button>
+	  submit save()[class="btn btn-success"] { "save" }
+    navigate home()[class="btn btn-success"]{ "cancel" } 
 	  </li>
 	  </ul>
            
-    
+//     <form class="row g-3">
+//   <div class="col-md-6">
+//     label("Description")[class="form-label"]{input(n.content)[class="form-control"]}
+// 
+//   </div>
+//   <div class="col-md-6">
+//     <label for="inputPassword4" class="form-label">Password</label>
+//     <input type="password" class="form-control" id="inputPassword4">
+//   </div>
+//   <div class="col-12">
+//     <label for="inputAddress" class="form-label">Address</label>
+//     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+//   </div>
+//   <div class="col-12">
+//     <label for="inputAddress2" class="form-label">Address 2</label>
+//     <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+//   </div>
+//   <div class="col-md-6">
+//     <label for="inputCity" class="form-label">City</label>
+//     <input type="text" class="form-control" id="inputCity">
+//   </div>
+//   <div class="col-md-4">
+//     <label for="inputState" class="form-label">State</label>
+//     <select id="inputState" class="form-select">
+//       <option selected>Choose...</option>
+//       <option>...</option>
+//     </select>
+//   </div>
+//   <div class="col-md-2">
+//     <label for="inputZip" class="form-label">Zip</label>
+//     <input type="text" class="form-control" id="inputZip">
+//   </div>
+//   <div class="col-12">
+//     <div class="form-check">
+//       <input class="form-check-input" type="checkbox" id="gridCheck">
+//       <label class="form-check-label" for="gridCheck">
+//         Check me out
+//       </label>
+//     </div>
+//   </div>
+//   <div class="col-12">
+//     <button type="submit" class="btn btn-primary">Sign in</button>
+//   </div>
+// </form>
     
   }
 }

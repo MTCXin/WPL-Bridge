@@ -7,6 +7,7 @@ imports boards/main
 
 imports login
 imports ac
+imports Myservice
 
 page home(){
   init{
@@ -17,7 +18,7 @@ page home(){
 
 page root {
 
-  main()  //TODO
+  main()  
   template localBody(){
     showBoards()
   }

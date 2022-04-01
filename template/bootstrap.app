@@ -22,39 +22,54 @@ template navbar(){
       <img src="images/DBC.png" alt="" width="35" height="45" class="d-inline-block align-text-top">
       "Bridge Club Managing System"
     </a>
-    <a class="nav-link active" aria-current="page">if(!loggedIn()){
-              navigate login(){"Login"}
+ if(!loggedIn()){
+              navigate login()[class="nav-link active", aria-current="page"]{"Login"}
             }
             else{
-              navigatelogout1(){"Logout"}
+              navigatelogout1()[class="nav-link active", aria-current="page"]{"Logout"}
             }
-    </a>
+  
 	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-	      <ul class="navbar-nav">
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">navigate home(){"Home"}</a>
-	        </li>
-	        <li class="nav-item">
+	      // <ul class="navbar-nav">
+	        // <li class="nav-item">
+	        //   <a class="nav-link active" aria-current="page" href="#">navigate home(){"Home"}</a>
+	        // </li>
+	        navigate home()[class="nav-link active", aria-current="page"]{"Home"}
 	        
-	          <a class="nav-link" href="#">navigate user(securityContext.principal){"Your Account"}</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">navigate listUsers(){"Member List"}</a>
-	        </li>
+	          navigate user(securityContext.principal){"Your Account"}
+	          navigate listUsers(){"Member in our club"}
+	        
 	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            "Manager"
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	            // <li><a class="dropdown-item" href="#">if(securityContext.principal.isManager){navigate createUser(){"Add User"}}</a></li>
-	            <li><a class="dropdown-item" href="#">navigate createBoards(){"Create Board"}</a></li>
-	            <li><a class="dropdown-item" href="#">"Something else here"</a></li>
-	          </ul>
-	        </li>
-	      </ul>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              "Manager"
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              // if(securityContext.principal.isManager){
+              navigate createBoards()[class="dropdown-item"]{"Create Board"}
+            
+            </ul>
+          </li>
+	        // <li class="nav-item">
+	        // 
+	        //   <a class="nav-link" href="#">navigate user(securityContext.principal){"Your Account"}</a>
+	        // </li>
+	        // <li class="nav-item">
+	        //   <a class="nav-link" href="#">navigate listUsers(){"Member List"}</a>
+	        // </li>
+	        // <li class="nav-item dropdown">
+	        //   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	        //     "Manager"
+	        //   </a>
+	        //   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	        //     // <li><a class="dropdown-item" href="#">if(securityContext.principal.isManager){navigate createUser(){"Add User"}}</a></li>
+	        //     <li><a class="dropdown-item" href="#">navigate createBoards(){"Create Board"}</a></li>
+	        //     <li><a class="dropdown-item" href="#">"Something else here"</a></li>
+	        //   </ul>
+	      //   </li>
+	      // </ul>
 	    </div>
     
         

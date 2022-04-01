@@ -1,0 +1,766 @@
+
+(Eclipse:9693): GdkPixbuf-CRITICAL **: 14:57:48.704: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+
+(Eclipse:9693): GdkPixbuf-CRITICAL **: 14:57:48.711: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+[ libstratego-parallel ] using 8 threads, jobsize 1.0
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.740 s
+typecheck: 0.480 s
+constraint-global: 0.200 s
+resolving: 0.020 s
+total time read                         : [1.28s]
+total time load drs                     : [0.20s]
+
+Analyzing: Bridge.app
+rename: 0.230 s
+typecheck: 0.080 s
+constraint-global: 0.040 s
+resolving: 0.000 s
+total time read                         : [0.14s]
+total time load drs                     : [0.12s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.140 s
+typecheck: 0.290 s
+constraint-global: 0.120 s
+resolving: 0.010 s
+total time read                         : [0.12s]
+total time load drs                     : [0.06s]
+No resolve for: Block([VarDeclGeneric("a"{"topdef16_a0"},None,ThisCall("JSONArray"{"topdef16_JSONArray0"},[])),ForAllStmt("t"{"topdef16_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef16_o0"},None,ThisCall("JSONObject"{"topdef16_JSONObject0"},[])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put0"},[String("id"),FieldAccess(Var("t"{"topdef16_t0"}),"id")])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put1"},[String("name"),FieldAccess(Var("t"{"topdef16_t0"}),"name")])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put2"},[String("number"),FieldAccess(Var("t"{"topdef16_t0"}),"number")])),Stat(Call(Var("a"{"topdef16_a0"}),"put"{"topdef16_put3"},[Var("o"{"topdef16_o0"})]))])){IteratorContext([Arg("t"{"topdef16_t0"},SimpleSort("TestService"))])},Return(Var("a"{"topdef16_a0"}))])
+No resolve for: Block([VarDeclGeneric("a"{"topdef16_a0"},None,ThisCall("JSONArray"{"topdef16_JSONArray0"},[])),ForAllStmt("t"{"topdef16_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef16_o0"},None,ThisCall("JSONObject"{"topdef16_JSONObject0"},[])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put0"},[String("id"),FieldAccess(Var("t"{"topdef16_t0"}),"id")])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put1"},[String("name"),FieldAccess(Var("t"{"topdef16_t0"}),"name")])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put2"},[String("number"),FieldAccess(Var("t"{"topdef16_t0"}),"number")])),Stat(Call(Var("a"{"topdef16_a0"}),"put"{"topdef16_put3"},[Var("o"{"topdef16_o0"})]))])){IteratorContext([Arg("t"{"topdef16_t0"},SimpleSort("TestService"))])},Return(Var("a"{"topdef16_a0"}))])
+No hover for: Block([VarDeclGeneric("a"{"topdef16_a0"},None,ThisCall("JSONArray"{"topdef16_JSONArray0"},[])),ForAllStmt("t"{"topdef16_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef16_o0"},None,ThisCall("JSONObject"{"topdef16_JSONObject0"},[])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put0"},[String("id"),FieldAccess(Var("t"{"topdef16_t0"}),"id")])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put1"},[String("name"),FieldAccess(Var("t"{"topdef16_t0"}),"name")])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put2"},[String("number"),FieldAccess(Var("t"{"topdef16_t0"}),"number")])),Stat(Call(Var("a"{"topdef16_a0"}),"put"{"topdef16_put3"},[Var("o"{"topdef16_o0"})]))])){IteratorContext([Arg("t"{"topdef16_t0"},SimpleSort("TestService"))])},Return(Var("a"{"topdef16_a0"}))])
+No hover for: Block([VarDeclGeneric("a"{"topdef16_a0"},None,ThisCall("JSONArray"{"topdef16_JSONArray0"},[])),ForAllStmt("t"{"topdef16_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef16_o0"},None,ThisCall("JSONObject"{"topdef16_JSONObject0"},[])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put0"},[String("id"),FieldAccess(Var("t"{"topdef16_t0"}),"id")])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put1"},[String("name"),FieldAccess(Var("t"{"topdef16_t0"}),"name")])),Stat(Call(Var("o"{"topdef16_o0"}),"put"{"topdef16_put2"},[String("number"),FieldAccess(Var("t"{"topdef16_t0"}),"number")])),Stat(Call(Var("a"{"topdef16_a0"}),"put"{"topdef16_put3"},[Var("o"{"topdef16_o0"})]))])){IteratorContext([Arg("t"{"topdef16_t0"},SimpleSort("TestService"))])},Return(Var("a"{"topdef16_a0"}))])
+(Eclipse:4668): GdkPixbuf-CRITICAL **: 11:49:14.111: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+
+(Eclipse:4668): GdkPixbuf-CRITICAL **: 11:49:14.151: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+[ libstratego-parallel ] using 8 threads, jobsize 1.0
+
+(Eclipse:6668): GdkPixbuf-CRITICAL **: 12:21:11.622: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+
+(Eclipse:6668): GdkPixbuf-CRITICAL **: 12:21:11.660: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+[ libstratego-parallel ] using 8 threads, jobsize 1.0
+No resolve for: Var("a")
+No resolve for: a
+No resolve for: users
+No resolve for: users
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.270 s
+typecheck: 0.170 s
+constraint-global: 0.130 s
+resolving: 0.020 s
+total time read                         : [0.47s]
+total time load drs                     : [0.07s]
+No hover for: Var("a")
+No hover for: a
+No resolve for: Stat(Call(Var("a"),"put",[Var("o")]))
+No resolve for: Call(Var("a"),"put",[Var("o")])
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.270 s
+typecheck: 0.120 s
+constraint-global: 0.120 s
+resolving: 0.000 s
+total time read                         : [0.13s]
+total time load drs                     : [0.08s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.180 s
+typecheck: 0.040 s
+constraint-global: 0.030 s
+resolving: 0.010 s
+total time read                         : [0.24s]
+total time load drs                     : [0.05s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.060 s
+typecheck: 0.020 s
+constraint-global: 0.030 s
+resolving: 0.000 s
+total time read                         : [0.05s]
+total time load drs                     : [0.03s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.130 s
+typecheck: 0.040 s
+constraint-global: 0.040 s
+resolving: 0.000 s
+total time read                         : [0.14s]
+total time load drs                     : [0.05s]
+No resolve for: ServiceFunction([],"users",[],Block([VarDeclGeneric("a"{"topdef18_a0"},None,ThisCall("JSONArray"{"topdef18_JSONArray0"},[])),ForAllStmt("t"{"topdef18_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef18_o0"},None,ThisCall("JSONObject"{"topdef18_JSONObject0"},[])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put0"},[String("id"),FieldAccess(Var("t"{"topdef18_t0"}),"id")])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put1"},[String("name"),FieldAccess(Var("t"{"topdef18_t0"}),"name")])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put2"},[String("number"),FieldAccess(Var("t"{"topdef18_t0"}),"number")])),Stat(Call(Var("a"{"topdef18_a0"}),"put"{"topdef18_put3"},[Var("o"{"topdef18_o0"})]))])){IteratorContext([Arg("t"{"topdef18_t0"},SimpleSort("TestService"))])},Return(Var("a"{"topdef18_a0"}))])){TopLevelName("topdef18")}
+No resolve for: ServiceFunction([],"users",[],Block([VarDeclGeneric("a"{"topdef18_a0"},None,ThisCall("JSONArray"{"topdef18_JSONArray0"},[])),ForAllStmt("t"{"topdef18_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef18_o0"},None,ThisCall("JSONObject"{"topdef18_JSONObject0"},[])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put0"},[String("id"),FieldAccess(Var("t"{"topdef18_t0"}),"id")])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put1"},[String("name"),FieldAccess(Var("t"{"topdef18_t0"}),"name")])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put2"},[String("number"),FieldAccess(Var("t"{"topdef18_t0"}),"number")])),Stat(Call(Var("a"{"topdef18_a0"}),"put"{"topdef18_put3"},[Var("o"{"topdef18_o0"})]))])){IteratorContext([Arg("t"{"topdef18_t0"},SimpleSort("TestService"))])},Return(Var("a"{"topdef18_a0"}))])){TopLevelName("topdef18")}
+No resolve for: ServiceFunction([],"users",[],Block([VarDeclGeneric("a"{"topdef18_a0"},None,ThisCall("JSONArray"{"topdef18_JSONArray0"},[])),ForAllStmt("t"{"topdef18_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef18_o0"},None,ThisCall("JSONObject"{"topdef18_JSONObject0"},[])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put0"},[String("id"),FieldAccess(Var("t"{"topdef18_t0"}),"id")])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put1"},[String("name"),FieldAccess(Var("t"{"topdef18_t0"}),"name")])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put2"},[String("number"),FieldAccess(Var("t"{"topdef18_t0"}),"number")])),Stat(Call(Var("a"{"topdef18_a0"}),"put"{"topdef18_put3"},[Var("o"{"topdef18_o0"})]))])){IteratorContext([Arg("t"{"topdef18_t0"},SimpleSort("TestService"))])},Return(Var("a"{"topdef18_a0"}))])){TopLevelName("topdef18")}
+No resolve for: ServiceFunction([],"users",[],Block([VarDeclGeneric("a"{"topdef18_a0"},None,ThisCall("JSONArray"{"topdef18_JSONArray0"},[])),ForAllStmt("t"{"topdef18_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef18_o0"},None,ThisCall("JSONObject"{"topdef18_JSONObject0"},[])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put0"},[String("id"),FieldAccess(Var("t"{"topdef18_t0"}),"id")])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put1"},[String("name"),FieldAccess(Var("t"{"topdef18_t0"}),"name")])),Stat(Call(Var("o"{"topdef18_o0"}),"put"{"topdef18_put2"},[String("number"),FieldAccess(Var("t"{"topdef18_t0"}),"number")])),Stat(Call(Var("a"{"topdef18_a0"}),"put"{"topdef18_put3"},[Var("o"{"topdef18_o0"})]))])){IteratorContext([Arg("t"{"topdef18_t0"},SimpleSort("TestService"))])},Return(Var("a"{"topdef18_a0"}))])){TopLevelName("topdef18")}
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.060 s
+typecheck: 0.020 s
+
+* unknown context: error: Multiple page/template definitions with name 'users'. Use 'override' modifier to replace existing pages/templates.
+define page users( ) {
+  { var a := JSONArray() ;
+    for ( t : TestService )
+    { var o := JSONObject() ;
+      o.put("id", t.id);
+      o.put("name", t.name);
+      o.put("number", t.number);
+      a.put(o); }
+    return a; }
+}
+* unknown context: error: Multiple page/template definitions with name 'users'. Use 'override' modifier to replace existing pages/templates.
+define page users( ) {
+  { var a := JSONArray() ;
+    for ( t : TestService )
+    { var o := JSONObject() ;
+      o.put("id", t.id);
+      o.put("name", t.name);
+      o.put("number", t.number);
+      a.put(o); }
+    return a; }
+}
+constraint-global: 0.280 s
+resolving: 0.000 s
+total time read                         : [0.07s]
+total time load drs                     : [0.07s]
+No resolve for: []
+No resolve for: []
+No hover for: []
+No hover for: []
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.090 s
+typecheck: 0.060 s
+
+* unknown context: error: Multiple page/template definitions with name 'users'. Use 'override' modifier to replace existing pages/templates.
+define page users( ) {
+  { var a := JSONArray() ;
+    for ( t : TestService )
+    { var o := JSONObject() ;
+      o.put("id", t.id);
+      o.put("name", t.name);
+      o.put("number", t.number);
+      a.put(o); }
+    return a; }
+}
+* unknown context: error: Multiple page/template definitions with name 'users'. Use 'override' modifier to replace existing pages/templates.
+define page users( ) {
+  { var a := JSONArray() ;
+    for ( t : TestService )
+    { var o := JSONObject() ;
+      o.put("id", t.id);
+      o.put("name", t.name);
+      o.put("number", t.number);
+      a.put(o); }
+    return a; }
+}
+constraint-global: 0.190 s
+resolving: 0.000 s
+total time read                         : [0.08s]
+total time load drs                     : [0.06s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.080 s
+typecheck: 0.040 s
+constraint-global: 0.040 s
+resolving: 0.000 s
+total time read                         : [0.18s]
+total time load drs                     : [0.05s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.080 s
+typecheck: 0.040 s
+
+* unknown context: error: Multiple page/template definitions with name 'login'. Use 'override' modifier to replace existing pages/templates.
+define page login( ) {
+  { var a := JSONArray() ;
+    for ( t : TestService )
+    { var o := JSONObject() ;
+      o.put("id", t.id);
+      o.put("name", t.name);
+      o.put("number", t.number);
+      a.put(o); }
+    return a; }
+}
+* unknown context: error: Multiple page/template definitions with name 'login'. Use 'override' modifier to replace existing pages/templates.
+define login( ) {
+  var credemail : Email
+  var credpassword : Secret
+  var stayLoggedIn := false
+  form(  )[  ]
+  { <fieldset >
+      <legend >
+        output( "Login" )[  ]
+        {  }
+      </legend>
+      <table >
+        <tr >
+          labelcolumns( "Email: " )[  ]
+          { input( credemail )[  ]
+            {  } }
+        </tr>
+        <tr >
+          labelcolumns( "Password: " )[  ]
+          { input( credpassword )[  ]
+            {  } }
+        </tr>
+        <tr >
+          labelcolumns( "Stay logged in:" )[  ]
+          { input( stayLoggedIn )[  ]
+            {  } }
+        </tr>
+      </table>
+      submit
+      (
+      "Login"
+      ,
+      signinAction()
+      )
+      [
+      ]
+    </fieldset> }
+  action signinAction ( )
+  { getSessionManager().stayLoggedIn := stayLoggedIn;
+    validate ( authenticate(credemail, credpassword) , "The login credentials are not valid." ) ;
+    message("You are now logged in.");
+    return root(); }
+}
+constraint-global: 0.250 s
+resolving: 0.000 s
+total time read                         : [0.06s]
+total time load drs                     : [0.03s]
+No resolve for: Block([VarDeclGeneric("o"{"topdef10_o0"},None,ThisCall("JSONObject"{"topdef10_JSONObject0"},[])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put0"},[String("id"),FieldAccess(Var("t"{"topdef10_t0"}),"id")])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put1"},[String("name"),FieldAccess(Var("t"{"topdef10_t0"}),"name")])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put2"},[String("number"),FieldAccess(Var("t"{"topdef10_t0"}),"number")])),Stat(Call(Var("a"{"topdef10_a0"}),"put"{"topdef10_put3"},[Var("o"{"topdef10_o0"})]))])
+No resolve for: Block([VarDeclGeneric("o"{"topdef10_o0"},None,ThisCall("JSONObject"{"topdef10_JSONObject0"},[])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put0"},[String("id"),FieldAccess(Var("t"{"topdef10_t0"}),"id")])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put1"},[String("name"),FieldAccess(Var("t"{"topdef10_t0"}),"name")])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put2"},[String("number"),FieldAccess(Var("t"{"topdef10_t0"}),"number")])),Stat(Call(Var("a"{"topdef10_a0"}),"put"{"topdef10_put3"},[Var("o"{"topdef10_o0"})]))])
+No hover for: Block([VarDeclGeneric("o"{"topdef10_o0"},None,ThisCall("JSONObject"{"topdef10_JSONObject0"},[])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put0"},[String("id"),FieldAccess(Var("t"{"topdef10_t0"}),"id")])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put1"},[String("name"),FieldAccess(Var("t"{"topdef10_t0"}),"name")])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put2"},[String("number"),FieldAccess(Var("t"{"topdef10_t0"}),"number")])),Stat(Call(Var("a"{"topdef10_a0"}),"put"{"topdef10_put3"},[Var("o"{"topdef10_o0"})]))])
+No hover for: Block([VarDeclGeneric("o"{"topdef10_o0"},None,ThisCall("JSONObject"{"topdef10_JSONObject0"},[])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put0"},[String("id"),FieldAccess(Var("t"{"topdef10_t0"}),"id")])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put1"},[String("name"),FieldAccess(Var("t"{"topdef10_t0"}),"name")])),Stat(Call(Var("o"{"topdef10_o0"}),"put"{"topdef10_put2"},[String("number"),FieldAccess(Var("t"{"topdef10_t0"}),"number")])),Stat(Call(Var("a"{"topdef10_a0"}),"put"{"topdef10_put3"},[Var("o"{"topdef10_o0"})]))])
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.040 s
+typecheck: 0.020 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.05s]
+total time load drs                     : [0.02s]
+Resolved: Function("generateFirstName",[],SimpleSort("String"),Block([Return(Call(ListCreation([String("Lisa"),String("David"),String("Laura"),String("Lars"),String("Julia"),String("Stan"),String("Anouk"),String("Jesse"),String("Nick"),String("Naomi"),String("Rick"),String("Sarah"),String("Daniel"),String("Tessa"),String("Sophie"),String("Kevin")]){ClosureInAnno([])},"random"{"generateFirstName_random0"},[]))]))
+No resolve for: AccessControlDefinition(None,[AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef25")},AccessControlRule("page","addUser",MatchArgs([],None),True,[]){TopLevelName("topdef26")},AccessControlRule("page","addUserValidate",MatchArgs([],None),True,[]){TopLevelName("topdef27")},AccessControlRule("page","getUser",MatchArgs([Arg("user"{"topdef28_user0"},SimpleSort("TestService")){IsTemplateArg}],None),True,[]){TopLevelName("topdef28")}])
+No resolve for: AccessControlDefinition(None,[AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef25")},AccessControlRule("page","addUser",MatchArgs([],None),True,[]){TopLevelName("topdef26")},AccessControlRule("page","addUserValidate",MatchArgs([],None),True,[]){TopLevelName("topdef27")},AccessControlRule("page","getUser",MatchArgs([Arg("user"{"topdef28_user0"},SimpleSort("TestService")){IsTemplateArg}],None),True,[]){TopLevelName("topdef28")}])
+No hover for: AccessControlDefinition(None,[AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef25")},AccessControlRule("page","addUser",MatchArgs([],None),True,[]){TopLevelName("topdef26")},AccessControlRule("page","addUserValidate",MatchArgs([],None),True,[]){TopLevelName("topdef27")},AccessControlRule("page","getUser",MatchArgs([Arg("user"{"topdef28_user0"},SimpleSort("TestService")){IsTemplateArg}],None),True,[]){TopLevelName("topdef28")}])
+No hover for: AccessControlDefinition(None,[AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef25")},AccessControlRule("page","addUser",MatchArgs([],None),True,[]){TopLevelName("topdef26")},AccessControlRule("page","addUserValidate",MatchArgs([],None),True,[]){TopLevelName("topdef27")},AccessControlRule("page","getUser",MatchArgs([Arg("user"{"topdef28_user0"},SimpleSort("TestService")){IsTemplateArg}],None),True,[]){TopLevelName("topdef28")}])
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.090 s
+typecheck: 0.030 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.06s]
+total time load drs                     : [0.06s]
+No hover for: users
+No hover for: users
+No resolve for: AccessControlDefinition(None,[AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef35")},AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef36")},AccessControlRule("page","addUser",MatchArgs([],None),True,[]){TopLevelName("topdef37")},AccessControlRule("page","addUserValidate",MatchArgs([],None),True,[]){TopLevelName("topdef38")},AccessControlRule("page","getUser",MatchArgs([Arg("user"{"topdef39_user0"},SimpleSort("TestService")){IsTemplateArg}],None),True,[]){TopLevelName("topdef39")}])
+No resolve for: AccessControlDefinition(None,[AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef35")},AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef36")},AccessControlRule("page","addUser",MatchArgs([],None),True,[]){TopLevelName("topdef37")},AccessControlRule("page","addUserValidate",MatchArgs([],None),True,[]){TopLevelName("topdef38")},AccessControlRule("page","getUser",MatchArgs([Arg("user"{"topdef39_user0"},SimpleSort("TestService")){IsTemplateArg}],None),True,[]){TopLevelName("topdef39")}])
+No hover for: AccessControlDefinition(None,[AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef35")},AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef36")},AccessControlRule("page","addUser",MatchArgs([],None),True,[]){TopLevelName("topdef37")},AccessControlRule("page","addUserValidate",MatchArgs([],None),True,[]){TopLevelName("topdef38")},AccessControlRule("page","getUser",MatchArgs([Arg("user"{"topdef39_user0"},SimpleSort("TestService")){IsTemplateArg}],None),True,[]){TopLevelName("topdef39")}])
+No hover for: AccessControlDefinition(None,[AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef35")},AccessControlRule("page","users",MatchArgs([],None),True,[]){TopLevelName("topdef36")},AccessControlRule("page","addUser",MatchArgs([],None),True,[]){TopLevelName("topdef37")},AccessControlRule("page","addUserValidate",MatchArgs([],None),True,[]){TopLevelName("topdef38")},AccessControlRule("page","getUser",MatchArgs([Arg("user"{"topdef39_user0"},SimpleSort("TestService")){IsTemplateArg}],None),True,[]){TopLevelName("topdef39")}])ERROR: SSL/ReadFromFile /home/wpl/eclipse-workspace/Bridge/.disable-on-save-analysis
+
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.110 s
+typecheck: 0.020 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.08s]
+total time load drs                     : [0.02s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.040 s
+typecheck: 0.020 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.05s]
+total time load drs                     : [0.02s]
+read old sig: 0.000 s
+... dependent modules to check: []
+finding dependent mods: 0.030 s
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.070 s
+typecheck: 0.040 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.05s]
+total time load drs                     : [0.02s]
+No resolve for: [VarDeclGeneric("o"{"topdef22_o0"},None,ThisCall("JSONObject"{"topdef22_JSONObject0"},[])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put0"},[String("id"),FieldAccess(Var("t"{"topdef22_t0"}),"id")])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put1"},[String("name"),FieldAccess(Var("t"{"topdef22_t0"}),"name")])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put2"},[String("number"),FieldAccess(Var("t"{"topdef22_t0"}),"number")])),Stat(Call(Var("a"{"topdef22_a0"}),"put"{"topdef22_put3"},[Var("o"{"topdef22_o0"})]))]
+No resolve for: [VarDeclGeneric("o"{"topdef22_o0"},None,ThisCall("JSONObject"{"topdef22_JSONObject0"},[])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put0"},[String("id"),FieldAccess(Var("t"{"topdef22_t0"}),"id")])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put1"},[String("name"),FieldAccess(Var("t"{"topdef22_t0"}),"name")])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put2"},[String("number"),FieldAccess(Var("t"{"topdef22_t0"}),"number")])),Stat(Call(Var("a"{"topdef22_a0"}),"put"{"topdef22_put3"},[Var("o"{"topdef22_o0"})]))]
+No hover for: [VarDeclGeneric("o"{"topdef22_o0"},None,ThisCall("JSONObject"{"topdef22_JSONObject0"},[])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put0"},[String("id"),FieldAccess(Var("t"{"topdef22_t0"}),"id")])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put1"},[String("name"),FieldAccess(Var("t"{"topdef22_t0"}),"name")])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put2"},[String("number"),FieldAccess(Var("t"{"topdef22_t0"}),"number")])),Stat(Call(Var("a"{"topdef22_a0"}),"put"{"topdef22_put3"},[Var("o"{"topdef22_o0"})]))]
+No hover for: [VarDeclGeneric("o"{"topdef22_o0"},None,ThisCall("JSONObject"{"topdef22_JSONObject0"},[])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put0"},[String("id"),FieldAccess(Var("t"{"topdef22_t0"}),"id")])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put1"},[String("name"),FieldAccess(Var("t"{"topdef22_t0"}),"name")])),Stat(Call(Var("o"{"topdef22_o0"}),"put"{"topdef22_put2"},[String("number"),FieldAccess(Var("t"{"topdef22_t0"}),"number")])),Stat(Call(Var("a"{"topdef22_a0"}),"put"{"topdef22_put3"},[Var("o"{"topdef22_o0"})]))]
+Got hover info: Var("t"{"topdef22_t0"})
+Resolved: ForAllStmt("t",SimpleSort("TestService"),None,Block([VarDeclInitInferred("o",ThisCall("JSONObject",[])),Stat(Call(Var("o"),"put",[String("id"),FieldAccess(Var("t"),"id")])),Stat(Call(Var("o"),"put",[String("name"),FieldAccess(Var("t"),"name")])),Stat(Call(Var("o"),"put",[String("number"),FieldAccess(Var("t"),"number")])),Stat(Call(Var("a"),"put",[Var("o")]))]))
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.080 s
+
+* unknown context: error: Variable 'o' not defined
+o
+typecheck: 0.140 s
+constraint-global: 0.030 s
+resolving: 0.000 s
+total time read                         : [0.06s]
+total time load drs                     : [0.03s]
+No resolve for: ForAllStmt("t"{"topdef43_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef43_o0"},None,ThisCall("JSONObject"{"topdef43_JSONObject0"},[])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put0"},[String("id"),FieldAccess(Var("t"{"topdef43_t0"}),"id")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put1"},[String("name"),FieldAccess(Var("t"{"topdef43_t0"}),"name")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put2"},[String("number"),FieldAccess(Var("t"{"topdef43_t0"}),"number")]))])){IteratorContext([Arg("t"{"topdef43_t0"},SimpleSort("TestService"))])}
+No resolve for: ForAllStmt("t"{"topdef43_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef43_o0"},None,ThisCall("JSONObject"{"topdef43_JSONObject0"},[])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put0"},[String("id"),FieldAccess(Var("t"{"topdef43_t0"}),"id")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put1"},[String("name"),FieldAccess(Var("t"{"topdef43_t0"}),"name")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put2"},[String("number"),FieldAccess(Var("t"{"topdef43_t0"}),"number")]))])){IteratorContext([Arg("t"{"topdef43_t0"},SimpleSort("TestService"))])}
+No hover for: ForAllStmt("t"{"topdef43_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef43_o0"},None,ThisCall("JSONObject"{"topdef43_JSONObject0"},[])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put0"},[String("id"),FieldAccess(Var("t"{"topdef43_t0"}),"id")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put1"},[String("name"),FieldAccess(Var("t"{"topdef43_t0"}),"name")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put2"},[String("number"),FieldAccess(Var("t"{"topdef43_t0"}),"number")]))])){IteratorContext([Arg("t"{"topdef43_t0"},SimpleSort("TestService"))])}
+No hover for: ForAllStmt("t"{"topdef43_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef43_o0"},None,ThisCall("JSONObject"{"topdef43_JSONObject0"},[])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put0"},[String("id"),FieldAccess(Var("t"{"topdef43_t0"}),"id")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put1"},[String("name"),FieldAccess(Var("t"{"topdef43_t0"}),"name")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put2"},[String("number"),FieldAccess(Var("t"{"topdef43_t0"}),"number")]))])){IteratorContext([Arg("t"{"topdef43_t0"},SimpleSort("TestService"))])}
+No resolve for: ForAllStmt("t"{"topdef43_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef43_o0"},None,ThisCall("JSONObject"{"topdef43_JSONObject0"},[])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put0"},[String("id"),FieldAccess(Var("t"{"topdef43_t0"}),"id")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put1"},[String("name"),FieldAccess(Var("t"{"topdef43_t0"}),"name")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put2"},[String("number"),FieldAccess(Var("t"{"topdef43_t0"}),"number")]))])){IteratorContext([Arg("t"{"topdef43_t0"},SimpleSort("TestService"))])}
+No resolve for: ForAllStmt("t"{"topdef43_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef43_o0"},None,ThisCall("JSONObject"{"topdef43_JSONObject0"},[])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put0"},[String("id"),FieldAccess(Var("t"{"topdef43_t0"}),"id")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put1"},[String("name"),FieldAccess(Var("t"{"topdef43_t0"}),"name")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put2"},[String("number"),FieldAccess(Var("t"{"topdef43_t0"}),"number")]))])){IteratorContext([Arg("t"{"topdef43_t0"},SimpleSort("TestService"))])}
+No hover for: ForAllStmt("t"{"topdef43_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef43_o0"},None,ThisCall("JSONObject"{"topdef43_JSONObject0"},[])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put0"},[String("id"),FieldAccess(Var("t"{"topdef43_t0"}),"id")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put1"},[String("name"),FieldAccess(Var("t"{"topdef43_t0"}),"name")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put2"},[String("number"),FieldAccess(Var("t"{"topdef43_t0"}),"number")]))])){IteratorContext([Arg("t"{"topdef43_t0"},SimpleSort("TestService"))])}
+No hover for: ForAllStmt("t"{"topdef43_t0"},SimpleSort("TestService"),None,Block([VarDeclGeneric("o"{"topdef43_o0"},None,ThisCall("JSONObject"{"topdef43_JSONObject0"},[])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put0"},[String("id"),FieldAccess(Var("t"{"topdef43_t0"}),"id")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put1"},[String("name"),FieldAccess(Var("t"{"topdef43_t0"}),"name")])),Stat(Call(Var("o"{"topdef43_o0"}),"put"{"topdef43_put2"},[String("number"),FieldAccess(Var("t"{"topdef43_t0"}),"number")]))])){IteratorContext([Arg("t"{"topdef43_t0"},SimpleSort("TestService"))])}ERROR: SSL/ReadFromFile /home/wpl/eclipse-workspace/Bridge/.disable-on-save-analysis
+
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.090 s
+
+* unknown context: error: Variable 't' not defined
+t
+* unknown context: error: Variable 't' not defined
+t
+* unknown context: error: Variable 't' not defined
+t
+typecheck: 0.150 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.04s]
+total time load drs                     : [0.03s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.080 s
+
+* unknown context: error: Variable 't' not defined
+t
+* unknown context: error: Variable 't' not defined
+t
+* unknown context: error: Variable 't' not defined
+t
+typecheck: 0.250 s
+constraint-global: 0.030 s
+resolving: 0.000 s
+total time read                         : [0.05s]
+total time load drs                     : [0.03s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.080 s
+
+* unknown context: error: Variable 't' not defined
+t
+* unknown context: error: Variable 't' not defined
+t
+* unknown context: error: Variable 't' not defined
+t
+typecheck: 0.170 s
+constraint-global: 0.030 s
+resolving: 0.000 s
+total time read                         : [0.08s]
+total time load drs                     : [0.03s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.110 s
+
+* unknown context: error: Variable 't' not defined
+t
+* unknown context: error: Variable 't' not defined
+t
+* unknown context: error: Variable 't' not defined
+t
+typecheck: 0.170 s
+constraint-global: 0.030 s
+resolving: 0.000 s
+total time read                         : [0.07s]
+total time load drs                     : [0.03s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.050 s
+
+* unknown context: error: Variable 't' not defined
+t
+typecheck: 0.090 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.05s]
+total time load drs                     : [0.03s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.130 s
+typecheck: 0.030 s
+constraint-global: 0.030 s
+resolving: 0.000 s
+total time read                         : [0.09s]
+total time load drs                     : [0.08s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.090 s
+typecheck: 0.030 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.07s]
+total time load drs                     : [0.04s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.060 s
+typecheck: 0.030 s
+constraint-global: 0.020 s
+resolving: 0.010 s
+total time read                         : [0.06s]
+total time load drs                     : [0.04s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.060 s
+typecheck: 0.010 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.06s]
+total time load drs                     : [0.02s]
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.030 s
+typecheck: 0.010 s
+constraint-global: 0.010 s
+resolving: 0.000 s
+total time read                         : [0.07s]
+total time load drs                     : [0.04s]
+read old sig: 0.000 s
+... dependent modules to check: []
+finding dependent mods: 0.020 s
+Got hover info: Var("o"{"topdef153_o0"})
+Resolved: VarDeclInitInferred("o",ThisCall("JSONObject",[]))
+No resolve for: o
+No resolve for: o
+No hover for: o
+No hover for: o
+No resolve for: SimpleSort("String")
+No resolve for: String
+Resolve in entity: TestService
+.. node is : String("number must be positive")
+No resolve for: String("number must be positive")
+Resolve in entity: TestService
+.. node is : number must be positive
+No resolve for: number must be positive
+No hover for: String("number must be positive")
+No hover for: number must be positive
+Resolve in entity: TestService
+.. node is : String("name too short")
+No resolve for: String("name too short")
+Resolve in entity: TestService
+.. node is : name too short
+No resolve for: name too short
+No hover for: String("name too short")
+No hover for: name too short
+Resolve in entity: TestService
+.. node is : String("number must be positive")
+No resolve for: String("number must be positive")
+Resolve in entity: TestService
+.. node is : number must be positive
+No resolve for: number must be positive
+No hover for: String("number must be positive")
+No hover for: number must be positive
+Resolve in entity: TestService
+.. node is : String("name too short")
+No resolve for: String("name too short")
+Resolve in entity: TestService
+.. node is : name too short
+No resolve for: name too short
+No hover for: String("name too short")
+(Eclipse:7773): GdkPixbuf-CRITICAL **: 13:07:31.785: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+
+(Eclipse:7773): GdkPixbuf-CRITICAL **: 13:07:31.793: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+[ libstratego-parallel ] using 8 threads, jobsize 1.0
+
+(Eclipse:7773): GdkPixbuf-CRITICAL **: 13:08:28.560: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+
+(Eclipse:7773): GdkPixbuf-CRITICAL **: 13:08:28.560: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+
+(Eclipse:7773): GdkPixbuf-CRITICAL **: 13:08:28.562: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+
+Analyzing: Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.340 s
+typecheck: 0.200 s
+constraint-global: 0.080 s
+resolving: 0.010 s
+total time read                         : [0.39s]
+total time load drs                     : [0.09s]
+
+Analyzing: .servletapp/src-webdsl-template/built-in.app
+rewriting failed, trace:
+	editor_analyze_0_0
+	editor_analyze_0_0
+	editor_analyze_work_0_0
+	report_with_failure_0_1
+	report_failure_0_2
+	SRTS_EXT_fatal_err_0_2
+
+Analyzing: .servletapp/src-webdsl-template/built-in.app
+Explicitly importing main file: Bridge
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+Bridge.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+template+main.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+template+template.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+template+bootstrap.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+user+main.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+user+data.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+user+page.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+user+ac.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+user+init.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+user+password.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+boards+main.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+boards+page.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+boards+ac.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+boards+data.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+login.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+ac.app.sig
+Updating cache: /home/wpl/eclipse-workspace/Bridge/.cache/+home+wpl+eclipse-workspace+Bridge+Myservice.app.sig
+rename: 2.180 s
+
+* unknown context: error: Function with name 'replace' and 1 argument(s) collides with a generated function that you are not allowed to overwrite
+function replace( ph: String ): Void
+{ getPage().addReRenderPlaceholders(ph);
+  getPage().actionHasAjaxPageUpdates := true; }
+typecheck: 1.710 s
+constraint-global: 0.080 s
+resolving: 0.130 s
+read old sig: 0.110 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/Bridge.app","/home/wpl/eclipse-workspace/Bridge/template/main.app","/home/wpl/eclipse-workspace/Bridge/template/template.app","/home/wpl/eclipse-workspace/Bridge/template/bootstrap.app","/home/wpl/eclipse-workspace/Bridge/user/main.app","/home/wpl/eclipse-workspace/Bridge/user/data.app","/home/wpl/eclipse-workspace/Bridge/user/page.app","/home/wpl/eclipse-workspace/Bridge/user/ac.app","/home/wpl/eclipse-workspace/Bridge/user/init.app","/home/wpl/eclipse-workspace/Bridge/user/password.app","/home/wpl/eclipse-workspace/Bridge/boards/main.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.460 s
+Editor updated; scheduling background update.
+
+Checking import: /home/wpl/eclipse-workspace/Bridge/Bridge.app
+rename: 0.060 s
+typecheck: 0.020 s
+constraint-global: 0.060 s
+resolving: 0.000 s
+total time read                         : [0.11s]
+total time load drs                     : [0.06s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/template/main.app","/home/wpl/eclipse-workspace/Bridge/template/template.app","/home/wpl/eclipse-workspace/Bridge/template/bootstrap.app","/home/wpl/eclipse-workspace/Bridge/user/main.app","/home/wpl/eclipse-workspace/Bridge/user/data.app","/home/wpl/eclipse-workspace/Bridge/user/page.app","/home/wpl/eclipse-workspace/Bridge/user/ac.app","/home/wpl/eclipse-workspace/Bridge/user/init.app","/home/wpl/eclipse-workspace/Bridge/user/password.app","/home/wpl/eclipse-workspace/Bridge/boards/main.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.010 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/template/main.app
+Explicitly importing main file: Bridge
+rename: 0.000 s
+typecheck: 0.000 s
+constraint-global: 0.030 s
+resolving: 0.000 s
+total time read                         : [0.14s]
+total time load drs                     : [0.04s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/user/main.app","/home/wpl/eclipse-workspace/Bridge/user/data.app","/home/wpl/eclipse-workspace/Bridge/user/page.app","/home/wpl/eclipse-workspace/Bridge/user/ac.app","/home/wpl/eclipse-workspace/Bridge/user/init.app","/home/wpl/eclipse-workspace/Bridge/user/password.app","/home/wpl/eclipse-workspace/Bridge/boards/main.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app","/home/wpl/eclipse-workspace/Bridge/template/template.app","/home/wpl/eclipse-workspace/Bridge/template/bootstrap.app"]
+finding dependent mods: 0.010 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/template/template.app
+Explicitly importing main file: Bridge
+rename: 0.010 s
+typecheck: 0.020 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.12s]
+total time load drs                     : [0.04s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/user/main.app","/home/wpl/eclipse-workspace/Bridge/user/data.app","/home/wpl/eclipse-workspace/Bridge/user/page.app","/home/wpl/eclipse-workspace/Bridge/user/ac.app","/home/wpl/eclipse-workspace/Bridge/user/init.app","/home/wpl/eclipse-workspace/Bridge/user/password.app","/home/wpl/eclipse-workspace/Bridge/boards/main.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app","/home/wpl/eclipse-workspace/Bridge/template/bootstrap.app"]
+finding dependent mods: 0.010 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/template/bootstrap.app
+Explicitly importing main file: Bridge
+rename: 0.010 s
+typecheck: 0.020 s
+constraint-global: 0.030 s
+resolving: 0.000 s
+total time read                         : [0.10s]
+total time load drs                     : [0.05s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/user/main.app","/home/wpl/eclipse-workspace/Bridge/user/data.app","/home/wpl/eclipse-workspace/Bridge/user/page.app","/home/wpl/eclipse-workspace/Bridge/user/ac.app","/home/wpl/eclipse-workspace/Bridge/user/init.app","/home/wpl/eclipse-workspace/Bridge/user/password.app","/home/wpl/eclipse-workspace/Bridge/boards/main.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.000 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/user/main.app
+Explicitly importing main file: Bridge
+rename: 0.000 s
+typecheck: 0.000 s
+constraint-global: 0.040 s
+resolving: 0.000 s
+total time read                         : [0.09s]
+total time load drs                     : [0.07s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/boards/main.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app","/home/wpl/eclipse-workspace/Bridge/user/data.app","/home/wpl/eclipse-workspace/Bridge/user/page.app","/home/wpl/eclipse-workspace/Bridge/user/ac.app","/home/wpl/eclipse-workspace/Bridge/user/init.app","/home/wpl/eclipse-workspace/Bridge/user/password.app"]
+finding dependent mods: 0.000 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/user/data.app
+Explicitly importing main file: Bridge
+rename: 0.010 s
+typecheck: 0.010 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.06s]
+total time load drs                     : [0.03s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/user/page.app","/home/wpl/eclipse-workspace/Bridge/user/ac.app","/home/wpl/eclipse-workspace/Bridge/user/init.app","/home/wpl/eclipse-workspace/Bridge/user/password.app","/home/wpl/eclipse-workspace/Bridge/boards/main.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.010 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/user/page.app
+Explicitly importing main file: Bridge
+rename: 0.130 s
+typecheck: 0.050 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.05s]
+total time load drs                     : [0.02s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/user/ac.app","/home/wpl/eclipse-workspace/Bridge/user/init.app","/home/wpl/eclipse-workspace/Bridge/user/password.app","/home/wpl/eclipse-workspace/Bridge/boards/main.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.000 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/user/ac.app
+Explicitly importing main file: Bridge
+rename: 0.000 s
+typecheck: 0.010 s
+constraint-global: 0.010 s
+resolving: 0.010 s
+total time read                         : [0.06s]
+total time load drs                     : [0.02s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/user/init.app","/home/wpl/eclipse-workspace/Bridge/user/password.app","/home/wpl/eclipse-workspace/Bridge/boards/main.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.010 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/user/init.app
+Explicitly importing main file: Bridge
+rename: 0.000 s
+typecheck: 0.000 s
+constraint-global: 0.010 s
+resolving: 0.000 s
+total time read                         : [0.08s]
+total time load drs                     : [0.03s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/user/password.app","/home/wpl/eclipse-workspace/Bridge/boards/main.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.010 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/user/password.app
+Explicitly importing main file: Bridge
+rename: 0.010 s
+typecheck: 0.000 s
+constraint-global: 0.040 s
+resolving: 0.000 s
+total time read                         : [0.11s]
+total time load drs                     : [0.08s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/boards/main.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.020 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/boards/main.app
+Explicitly importing main file: Bridge
+rename: 0.000 s
+typecheck: 0.000 s
+constraint-global: 0.040 s
+resolving: 0.000 s
+total time read                         : [0.09s]
+total time load drs                     : [0.05s]
+read old sig: 0.010 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app","/home/wpl/eclipse-workspace/Bridge/boards/page.app","/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app"]
+finding dependent mods: 0.000 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/boards/page.app
+Explicitly importing main file: Bridge
+rename: 0.090 s
+typecheck: 0.040 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.05s]
+total time load drs                     : [0.04s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/boards/ac.app","/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.000 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/boards/ac.app
+Explicitly importing main file: Bridge
+rename: 0.000 s
+typecheck: 0.000 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.04s]
+total time load drs                     : [0.02s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/boards/data.app","/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.010 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/boards/data.app
+Explicitly importing main file: Bridge
+rename: 0.000 s
+typecheck: 0.010 s
+constraint-global: 0.010 s
+resolving: 0.000 s
+total time read                         : [0.05s]
+total time load drs                     : [0.03s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/login.app","/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.000 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/login.app
+Explicitly importing main file: Bridge
+rename: 0.020 s
+typecheck: 0.010 s
+constraint-global: 0.010 s
+resolving: 0.000 s
+total time read                         : [0.05s]
+total time load drs                     : [0.03s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/ac.app","/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.000 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/ac.app
+Explicitly importing main file: Bridge
+rename: 0.010 s
+typecheck: 0.010 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.06s]
+total time load drs                     : [0.02s]
+read old sig: 0.000 s
+... dependent modules to check: ["/home/wpl/eclipse-workspace/Bridge/Myservice.app"]
+finding dependent mods: 0.000 s
+Checking import: /home/wpl/eclipse-workspace/Bridge/Myservice.app
+Explicitly importing main file: Bridge
+rename: 0.080 s
+typecheck: 0.030 s
+constraint-global: 0.010 s
+resolving: 0.000 s
+total time read                         : [0.06s]
+total time load drs                     : [0.03s]
+read old sig: 0.000 s
+... dependent modules to check: []
+finding dependent mods: 0.010 s
+
+Analyzing: Bridge.app
+rename: 0.010 s
+typecheck: 0.000 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.06s]
+total time load drs                     : [0.03s]
+
+Analyzing: Bridge.app
+rename: 0.010 s
+typecheck: 0.000 s
+constraint-global: 0.020 s
+resolving: 0.000 s
+total time read                         : [0.06s]
+total time load drs                     : [0.03s]
+No resolve for: Application("Bridge",[Section("definitions",[Imports("template/main"){TopLevelName("topdef145")},Imports("user/main"){TopLevelName("topdef146")},Imports("boards/main"){TopLevelName("topdef147")},Imports("login"){TopLevelName("topdef148")},Imports("ac"){TopLevelName("topdef149")},Imports("Myservice"){TopLevelName("topdef150")},Define([Page],"home",[],None,[InitAction(Block([Return(PageCall("root",[]))]))]),Define([Page],"root",[],None,[TemplateCall("main"{"root_main0"},[],[],TemplateBody([])),Define([Local,Template],"localBody"{"root_localBody0"},[],None,[TemplateCall("showBoards"{"root_showBoards0"},[],[],TemplateBody([]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])},Define([Local,Template],"sidebarPlaceholder"{"root_sidebarPlaceholder0"},[],None,[TemplateCall("sidebar"{"root_sidebar0"},[],[],TemplateBody([Text("News")]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])}]),Define([Template],"formgroup"{"formgroup0"},[Arg("s"{"formgroupString_s0"},SimpleSort("String")){IsTemplateArg}],None,[XMLElement("fieldset",[],[XMLElement("legend",[],[TemplateCall("output"{"formgroupString_output0"},[Var("s"{"formgroupString_s0"})],[],TemplateBody([]))],"legend"),TemplateCall("elements"{"formgroupString_elements0"},[],[],TemplateBody([]))],"fieldset")]){[]}]),AccessControlDefinition(None,[AccessControlRule("page","root",MatchArgs([],None),True,[]){TopLevelName("topdef151")}])])
+No resolve for: Application("Bridge",[Section("definitions",[Imports("template/main"){TopLevelName("topdef145")},Imports("user/main"){TopLevelName("topdef146")},Imports("boards/main"){TopLevelName("topdef147")},Imports("login"){TopLevelName("topdef148")},Imports("ac"){TopLevelName("topdef149")},Imports("Myservice"){TopLevelName("topdef150")},Define([Page],"home",[],None,[InitAction(Block([Return(PageCall("root",[]))]))]),Define([Page],"root",[],None,[TemplateCall("main"{"root_main0"},[],[],TemplateBody([])),Define([Local,Template],"localBody"{"root_localBody0"},[],None,[TemplateCall("showBoards"{"root_showBoards0"},[],[],TemplateBody([]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])},Define([Local,Template],"sidebarPlaceholder"{"root_sidebarPlaceholder0"},[],None,[TemplateCall("sidebar"{"root_sidebar0"},[],[],TemplateBody([Text("News")]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])}]),Define([Template],"formgroup"{"formgroup0"},[Arg("s"{"formgroupString_s0"},SimpleSort("String")){IsTemplateArg}],None,[XMLElement("fieldset",[],[XMLElement("legend",[],[TemplateCall("output"{"formgroupString_output0"},[Var("s"{"formgroupString_s0"})],[],TemplateBody([]))],"legend"),TemplateCall("elements"{"formgroupString_elements0"},[],[],TemplateBody([]))],"fieldset")]){[]}]),AccessControlDefinition(None,[AccessControlRule("page","root",MatchArgs([],None),True,[]){TopLevelName("topdef151")}])])
+No resolve for: Application("Bridge",[Section("definitions",[Imports("template/main"){TopLevelName("topdef145")},Imports("user/main"){TopLevelName("topdef146")},Imports("boards/main"){TopLevelName("topdef147")},Imports("login"){TopLevelName("topdef148")},Imports("ac"){TopLevelName("topdef149")},Imports("Myservice"){TopLevelName("topdef150")},Define([Page],"home",[],None,[InitAction(Block([Return(PageCall("root",[]))]))]),Define([Page],"root",[],None,[TemplateCall("main"{"root_main0"},[],[],TemplateBody([])),Define([Local,Template],"localBody"{"root_localBody0"},[],None,[TemplateCall("showBoards"{"root_showBoards0"},[],[],TemplateBody([]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])},Define([Local,Template],"sidebarPlaceholder"{"root_sidebarPlaceholder0"},[],None,[TemplateCall("sidebar"{"root_sidebar0"},[],[],TemplateBody([Text("News")]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])}]),Define([Template],"formgroup"{"formgroup0"},[Arg("s"{"formgroupString_s0"},SimpleSort("String")){IsTemplateArg}],None,[XMLElement("fieldset",[],[XMLElement("legend",[],[TemplateCall("output"{"formgroupString_output0"},[Var("s"{"formgroupString_s0"})],[],TemplateBody([]))],"legend"),TemplateCall("elements"{"formgroupString_elements0"},[],[],TemplateBody([]))],"fieldset")]){[]}]),AccessControlDefinition(None,[AccessControlRule("page","root",MatchArgs([],None),True,[]){TopLevelName("topdef151")}])])
+No resolve for: Application("Bridge",[Section("definitions",[Imports("template/main"){TopLevelName("topdef145")},Imports("user/main"){TopLevelName("topdef146")},Imports("boards/main"){TopLevelName("topdef147")},Imports("login"){TopLevelName("topdef148")},Imports("ac"){TopLevelName("topdef149")},Imports("Myservice"){TopLevelName("topdef150")},Define([Page],"home",[],None,[InitAction(Block([Return(PageCall("root",[]))]))]),Define([Page],"root",[],None,[TemplateCall("main"{"root_main0"},[],[],TemplateBody([])),Define([Local,Template],"localBody"{"root_localBody0"},[],None,[TemplateCall("showBoards"{"root_showBoards0"},[],[],TemplateBody([]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])},Define([Local,Template],"sidebarPlaceholder"{"root_sidebarPlaceholder0"},[],None,[TemplateCall("sidebar"{"root_sidebar0"},[],[],TemplateBody([Text("News")]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])}]),Define([Template],"formgroup"{"formgroup0"},[Arg("s"{"formgroupString_s0"},SimpleSort("String")){IsTemplateArg}],None,[XMLElement("fieldset",[],[XMLElement("legend",[],[TemplateCall("output"{"formgroupString_output0"},[Var("s"{"formgroupString_s0"})],[],TemplateBody([]))],"legend"),TemplateCall("elements"{"formgroupString_elements0"},[],[],TemplateBody([]))],"fieldset")]){[]}]),AccessControlDefinition(None,[AccessControlRule("page","root",MatchArgs([],None),True,[]){TopLevelName("topdef151")}])])
+No hover for: Application("Bridge",[Section("definitions",[Imports("template/main"){TopLevelName("topdef145")},Imports("user/main"){TopLevelName("topdef146")},Imports("boards/main"){TopLevelName("topdef147")},Imports("login"){TopLevelName("topdef148")},Imports("ac"){TopLevelName("topdef149")},Imports("Myservice"){TopLevelName("topdef150")},Define([Page],"home",[],None,[InitAction(Block([Return(PageCall("root",[]))]))]),Define([Page],"root",[],None,[TemplateCall("main"{"root_main0"},[],[],TemplateBody([])),Define([Local,Template],"localBody"{"root_localBody0"},[],None,[TemplateCall("showBoards"{"root_showBoards0"},[],[],TemplateBody([]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])},Define([Local,Template],"sidebarPlaceholder"{"root_sidebarPlaceholder0"},[],None,[TemplateCall("sidebar"{"root_sidebar0"},[],[],TemplateBody([Text("News")]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])}]),Define([Template],"formgroup"{"formgroup0"},[Arg("s"{"formgroupString_s0"},SimpleSort("String")){IsTemplateArg}],None,[XMLElement("fieldset",[],[XMLElement("legend",[],[TemplateCall("output"{"formgroupString_output0"},[Var("s"{"formgroupString_s0"})],[],TemplateBody([]))],"legend"),TemplateCall("elements"{"formgroupString_elements0"},[],[],TemplateBody([]))],"fieldset")]){[]}]),AccessControlDefinition(None,[AccessControlRule("page","root",MatchArgs([],None),True,[]){TopLevelName("topdef151")}])])
+No hover for: Application("Bridge",[Section("definitions",[Imports("template/main"){TopLevelName("topdef145")},Imports("user/main"){TopLevelName("topdef146")},Imports("boards/main"){TopLevelName("topdef147")},Imports("login"){TopLevelName("topdef148")},Imports("ac"){TopLevelName("topdef149")},Imports("Myservice"){TopLevelName("topdef150")},Define([Page],"home",[],None,[InitAction(Block([Return(PageCall("root",[]))]))]),Define([Page],"root",[],None,[TemplateCall("main"{"root_main0"},[],[],TemplateBody([])),Define([Local,Template],"localBody"{"root_localBody0"},[],None,[TemplateCall("showBoards"{"root_showBoards0"},[],[],TemplateBody([]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])},Define([Local,Template],"sidebarPlaceholder"{"root_sidebarPlaceholder0"},[],None,[TemplateCall("sidebar"{"root_sidebar0"},[],[],TemplateBody([Text("News")]))]){EnclosingDefine(("root",[]),"root",[],False,[Page]),ClosureInAnno([])}]),Define([Template],"formgroup"{"formgroup0"},[Arg("s"{"formgroupString_s0"},SimpleSort("String")){IsTemplateArg}],None,[XMLElement("fieldset",[],[XMLElement("legend",[],[TemplateCall("output"{"formgroupString_output0"},[Var("s"{"formgroupString_s0"})],[],TemplateBody([]))],"legend"),TemplateCall("elements"{"formgroupString_elements0"},[],[],TemplateBody([]))],"fieldset")]){[]}]),AccessControlDefinition(None,[AccessControlRule("page","root",MatchArgs([],None),True,[]){TopLevelName("topdef151")}])])
