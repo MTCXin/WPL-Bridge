@@ -32,37 +32,74 @@ template output(n: Boards){
     action quit(){
       n.player.remove(securityContext.principal);
     }
-  <h2 class="news-post-title">output(n.title)</h2>
-  <p class="news-post">
-    output(n.time.format("d MMM yyyy HH:mm"))
-  </p>
-  <p>
-    output(n.content)
-  </p>
-
-  if(loggedIn() && securityContext.principal.isManager){
-
-    navigate(editBoards(n)){"editBoards"}
-  }
-
-  if(loggedIn()){
-    break
+    <div class="card" >
+    <div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+      
+    </div>
+    <div class="col-md-auto">
+      <h2 class="news-post-title">output(n.title)</h2>
+    </div>
+    <div class="col col-lg-2">
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      output(n.content)
+    </div>
+    <div class="col-md-auto">
+       output(n.time.format("d MMM yyyy HH:mm"))
+    </div>
     
-    // for(user: User in select u from n.player){
-    //   <div class="news-post"> 
-    //   output(u)
-    //   </div>
-    //   }  TODO show members participating
+  </div>
+</div>
+  
+<div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+      
+    </div>
+    <div class="col-md-auto">
+      if(loggedIn() && securityContext.principal.isManager){
+
+    navigate editBoards(n)[class="btn btn-info"]{"editBoards"}
+  }
+    </div>
+    <div class="col col-lg-2">
+      
+    </div>
+  </div>
+  
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+      
+    </div>
+    <div class="col-md-auto">
+      if(loggedIn()){
     
     if(securityContext.principal in n.player){
-      submit quit() {"quit"}
+      submit quit()[class="btn btn-danger"] {"quit"}
     }
     if(!(securityContext.principal in n.player)){
-      submit join() {"join"}
+      submit join()[class="btn btn-success"] {"join"}
     }
     
     
   }
+    </div>
+    <div class="col">
+    "Members in this game: "
+      for(p: User in n.player){
+      output(p.username)
+      " "
+    }
+    </div>
+  </div>
+  
+
+  
+  </div>
 
 
 }
@@ -70,7 +107,7 @@ template output(n: Boards){
 page createBoards(){
   main()
   define localBody(){
-    var n := Boards{creator := securityContext.principal time:=now()}
+    var n := Boards{ time:=now()}
     action save(){
       n.save();
       return home();
@@ -82,56 +119,13 @@ page createBoards(){
 	  label("Title")[class="form-label"]{input(n.title)[ class="form-control"]}
 	  label("Description")[class="list-group-item"]{input(n.content)[ class="form-control"]}
 	  label("Time")[class="list-group-item"]{input(n.time)[ class="form-control"]}
+	  label("Tournament Director")[class="form-label"]{input(n.director)[ class="form-control"]}
 	  <li class="list-group-item">
 	  submit save()[class="btn btn-success"] { "save" }
     navigate home()[class="btn btn-success"]{ "cancel" } 
 	  </li>
 	  </ul>
-           
-//     <form class="row g-3">
-//   <div class="col-md-6">
-//     label("Description")[class="form-label"]{input(n.content)[class="form-control"]}
-// 
-//   </div>
-//   <div class="col-md-6">
-//     <label for="inputPassword4" class="form-label">Password</label>
-//     <input type="password" class="form-control" id="inputPassword4">
-//   </div>
-//   <div class="col-12">
-//     <label for="inputAddress" class="form-label">Address</label>
-//     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-//   </div>
-//   <div class="col-12">
-//     <label for="inputAddress2" class="form-label">Address 2</label>
-//     <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-//   </div>
-//   <div class="col-md-6">
-//     <label for="inputCity" class="form-label">City</label>
-//     <input type="text" class="form-control" id="inputCity">
-//   </div>
-//   <div class="col-md-4">
-//     <label for="inputState" class="form-label">State</label>
-//     <select id="inputState" class="form-select">
-//       <option selected>Choose...</option>
-//       <option>...</option>
-//     </select>
-//   </div>
-//   <div class="col-md-2">
-//     <label for="inputZip" class="form-label">Zip</label>
-//     <input type="text" class="form-control" id="inputZip">
-//   </div>
-//   <div class="col-12">
-//     <div class="form-check">
-//       <input class="form-check-input" type="checkbox" id="gridCheck">
-//       <label class="form-check-label" for="gridCheck">
-//         Check me out
-//       </label>
-//     </div>
-//   </div>
-//   <div class="col-12">
-//     <button type="submit" class="btn btn-primary">Sign in</button>
-//   </div>
-// </form>
+
     
   }
 }
@@ -146,10 +140,10 @@ page editBoards(n: Boards){
     header{"Boards"}
     form{
       formgroup("Edit Boards")[labelWidth := "75"]{
-        label("Title"){input(n.title)}
-        label("Content"){input(n.content)}
-        label("Creator"){input(n.creator)}
-        label("Time"){input(n.time)}
+        label("Title")[class="form-label"]{input(n.title)[ class="form-control"]}
+        label("Content")[class="form-label"]{input(n.content)[ class="form-control"]}
+        label("Creator")[class="form-label"]{input(n.director)[ class="form-control"]}
+        label("Time")[class="form-label"]{input(n.time)[ class="form-control"]}
       }
       submit save() { "save" } 
       navigate home() { "cancel" }

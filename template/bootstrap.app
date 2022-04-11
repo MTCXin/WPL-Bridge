@@ -19,14 +19,15 @@ template navbar(){
   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="images/DBC.png" alt="" width="35" height="45" class="d-inline-block align-text-top">
+    image("/images/DBC.png")[width="35", height="45", class="d-inline-block align-text-top"]
+      // <img src="/images/DBC.png" alt="" width="35" height="45" class="d-inline-block align-text-top">
       "Bridge Club Managing System"
     </a>
  if(!loggedIn()){
-              navigate login()[class="nav-link active", aria-current="page"]{"Login"}
+              navigate login()[class="btn btn-primary btn-lg"]{"Login"}
             }
             else{
-              navigatelogout1()[class="nav-link active", aria-current="page"]{"Logout"}
+              navigate logout1()[class="btn btn-secondary btn-lg"]{"Logout"}
             }
   
 	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,9 +39,8 @@ template navbar(){
 	        //   <a class="nav-link active" aria-current="page" href="#">navigate home(){"Home"}</a>
 	        // </li>
 	        navigate home()[class="nav-link active", aria-current="page"]{"Home"}
-	        
-	          navigate user(securityContext.principal){"Your Account"}
-	          navigate listUsers(){"Member in our club"}
+	        navigate user(securityContext.principal)[class="nav-link active"]{"Your Account"}
+	        navigate listUsers()[class="nav-link active"]{"Member in our club"}
 	        
 	        <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,28 +48,10 @@ template navbar(){
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               // if(securityContext.principal.isManager){
-              navigate createBoards()[class="dropdown-item"]{"Create Board"}
-            
+              <li>navigate createBoards()[class="dropdown-item"]{"Create Board"}</li>
+              <li>navigate createUser()[class="dropdown-item"]{"Create User"}</li>
             </ul>
           </li>
-	        // <li class="nav-item">
-	        // 
-	        //   <a class="nav-link" href="#">navigate user(securityContext.principal){"Your Account"}</a>
-	        // </li>
-	        // <li class="nav-item">
-	        //   <a class="nav-link" href="#">navigate listUsers(){"Member List"}</a>
-	        // </li>
-	        // <li class="nav-item dropdown">
-	        //   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	        //     "Manager"
-	        //   </a>
-	        //   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	        //     // <li><a class="dropdown-item" href="#">if(securityContext.principal.isManager){navigate createUser(){"Add User"}}</a></li>
-	        //     <li><a class="dropdown-item" href="#">navigate createBoards(){"Create Board"}</a></li>
-	        //     <li><a class="dropdown-item" href="#">"Something else here"</a></li>
-	        //   </ul>
-	      //   </li>
-	      // </ul>
 	    </div>
     
         
@@ -134,15 +116,6 @@ override template container(){
 }
 
 
-//       if(!loggedIn()){
-//         navigate(login()){"Login"}
-//       }
-//       else{
-//         navigate(logout1()){"Logout"}
-//       }
-//     </li>
-//   </ul>
-// }
 template gridrow(){
   <div class="row" all attributes> elements </div>
 }

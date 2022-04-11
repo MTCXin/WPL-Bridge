@@ -24,7 +24,7 @@ page root {
   }
   template sidebarPlaceholder(){
     sidebar{
-      "News"
+      "Games"
     }
   }
 }

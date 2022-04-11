@@ -3,14 +3,91 @@ module Myservice
 service loginserve(){
   // WebDSL built-in.app wraps JSONObject and JSONArray APIs
   // ctrl/cmd click on JSONArray/JSONObject in the editor to find this
-  var a := JSONArray();
-    var o := JSONObject();
-    o.put( "token", "12345" );
-    a.put( o );
   
-  return a;
+  if( getHttpMethod() == "POST" ){
+    var body := readRequestBody();
+    var o := JSONObject( body );
+    var msgs := JSONArray();
+    var msg := JSONObject();
+    // need to check value wellformedness before trying to create entity
+    var usernameget : Email :=o.getString( "username" ) as Email;
+    var passwordget : Secret :=o.getString( "password" ) as Secret;
+    if(checkLogin(usernameget,passwordget)) 
+    {
+      securityContext.principal := getUsersWithEmailAddress(usernameget).get(0);
+      msg.put( "token", "12345" );
+      msgs.put(msg);
+    }
+    else
+    {
+      msg.put( "token", "0" );
+      msgs.put(msg);
+    }
+    //   o.getString( "number" ).parseInt() == null ){
+    //   addJsonError( msgs, "number value is not a number" );
+    // } 
+    // else {
+    //   var ts := TestService{
+    //     name := o.getString( "name" )
+    //     number := o.getInt( "number" )
+    //   }.save();
+      // get the results from the entity validate checks
+    //   var checkresults := ts.validateSave();
+    //   for( ex in checkresults.exceptions ){
+    //     // mark transaction to be aborted
+    //     rollback();
+    //     addJsonError( msgs, ex.message );
+    //   }
+    //   if( msgs.length() == 0 ){
+    //     addJsonMessage( msgs, "ok" );
+    //   }
+    // }
+    return msgs;
+  }
+  
 }
-
+// service joinquit(){
+//   if( getHttpMethod() == "POST" ){
+//     var body := readRequestBody();
+//     var o := JSONObject( body );
+//     var msgs := JSONArray();
+//     var msg := JSONObject();
+//     // need to check value wellformedness before trying to create entity
+//     var commandget : String :=o.getString( "command" );
+//     var titleget : String :=o.getString( "title" );
+//     if(commandget=="1") 
+//     {
+//       getUniqueEntity(titleget).player.add(securityContext.principal);     
+//     }
+//     else
+//     {
+//       getUniqueEntity(titleget).player.remove(securityContext.principal);   
+//     }
+//     return msgs;
+// }
+service getboards(){
+  var boards := JSONArray();
+  var names : String :="";
+  for( t: Boards ){
+    var board := JSONObject();
+    board.put( "content", t.content );
+    board.put( "title", t.title );
+    if(securityContext.principal in t.player){
+      board.put( "self", 1 );
+    }
+    else{
+      board.put( "self", 0 );
+    }
+    for(pn: User in t.player){
+      if(securityContext.principal != pn){
+        names:=names+pn.username+" ";
+      }
+    }
+    board.put( "player", names );
+    boards.put( board );
+  }
+  return boards;
+}
 service users(){
   // WebDSL built-in.app wraps JSONObject and JSONArray APIs
   // ctrl/cmd click on JSONArray/JSONObject in the editor to find this
@@ -100,6 +177,7 @@ function addJsonMessage( msgs: JSONArray, msg: String ){
 access control rules
   // use page rules for services
   rule page loginserve(){ true }
+  rule page getboards(){ loggedIn()}
   rule page users(){ true }
   rule page addUser(){ true }
   rule page addUserValidate(){ true }

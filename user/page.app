@@ -4,14 +4,49 @@ module user/page
     main()
     define localBody(){
       standardLayout{
-        formgroup("User"){
-          label("Name"){output(u.username)}
-          label("E-mail"){output(u.email)}
-          label("Convention System"){output(u.convention)}
-          showAdminStatus(u)
-        }
+        <div class="card" >
+    <div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+      
+    </div>
+    <div class="col-md-auto">
+      <h2 class="news-post-title">"User:  " output(u.username)</h2>
+      
+    </div>
+    <div class="col col-lg-2">
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-lg-2">
+      
+    </div>
+    <div class="col-md-auto">
+    "Your E-mail: "
+    output(u.email)
+    </div>
+    <div class="col col-lg-2">
+      
+    </div>
+    </div>
+    <div class="row">
+    <div class="col col-lg-2">
+      
+    </div>
+    <div class="col-md-auto">
+    "Your bidding system"
+    output(u.convention)
+    </div>
+    <div class="col col-lg-2">
+      showAdminStatus(u)
+    </div>
+    </div>
+  </div>
+</div>
+       
         break
-        navigate(editUser(u)){"edit"}
+        navigate editUser(u)[class="btn btn-info"]{"edit"}
       }
     }
   }
@@ -25,11 +60,10 @@ module user/page
     standardLayout{
       form{
         formgroup("Edit User"){
-          label("Name"){input(u.username)}
-          label("E-mail"){input(u.email)}
-          label("Convention System"){input(u.convention)}
-          break
-          action("save",save())
+          label("Name")[class="form-label"]{input(u.username)[class="form-control", placeholder="your name"]}
+          label("E-mail")[class="form-label"]{input(u.email)[class="form-control", placeholder="name@example.com"]}
+          label("Convention System")[class="form-label"]{input(u.convention)[class="form-control", placeholder="Describe your convention and system here"]}
+          submit save()[class="btn btn-success"]{"save"}
         }
       }
     }
@@ -55,10 +89,9 @@ module user/page
   }
 
   template editUserPassword(u:User){
-    "TODO: change pw"
+
     var temp : Secret := ""
     action changePassword(){
-      // var pass : String := u.password.toString();
       u.password := u.password.digest();
       u.save();
       message("password changed");
@@ -67,10 +100,10 @@ module user/page
     }
     form{
       formgroup("Change Password"){
-        label("Password"){input(u.password)}
-        label("Repeat Password"){input(temp){ validate(u.password == temp, "Password does not match") } }
+        label("Password")[class="form-label"]{input(u.password)[class="form-control"]}
+        label("Repeat Password")[class="form-label"]{input(temp)[class="form-control"]{ validate(u.password == temp, "Password does not match") } }
         break
-        action("change",changePassword())
+        submit changePassword()[class="btn btn-success"]{"change"}
       }
     }
   }
@@ -81,7 +114,7 @@ module user/page
       standardLayout{
         editUserDetails(u)
         editUserPassword(u)
-        editAdminStatus(u)
+        // editAdminStatus(u)
       }
     }
   }
@@ -89,24 +122,22 @@ module user/page
   page createUser(){
     main()
     define localBody(){
-      var u := User{}  //TODO vars cannot be in enclosing def, fix
+      var u := User{} 
       var temp : Secret := ""
       action save(){
         u.password := u.password.digest();
         u.save();
-
-        //message("user info updated");
         return user(u);
       }
       standardLayout{
         form{
           formgroup("Create User"){
-            label("Name"){input(u.username)}
-            label("Email"){input(u.email)}
-            label("Password"){input(u.password)}
-            label("Repeat Password"){input(temp){ validate(u.password == temp, "Password does not match") } }
+            label("Name")[class="form-label"]{input(u.username)[class="form-control", placeholder="user's name"]}
+            label("Email")[class="form-label"]{input(u.email)[class="form-control", placeholder="name@example.com"]}
+            label("Password")[class="form-label"]{input(u.password)[class="form-control"]}
+            label("Repeat Password")[class="form-label"]{input(temp)[class="form-control"]{ validate(u.password == temp, "Password does not match") } }
             break
-            action("save",save())
+            submit save()[class="btn btn-success"]{"save"}
           }
         }
       }
